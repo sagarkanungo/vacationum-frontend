@@ -16,6 +16,8 @@ export default function RoundTripFlights({
   const [hasMore, setHasMore] = useState(true); // Track if more pages exist
   const listRef = useRef(null);
   console.log('flight length',segments.length)
+
+  const apiUrl = import.meta.env.VITE_BACKEND_URL;
   
   const fetchFlights = async (reset = false) => {
     if (loading) return; // prevent multiple fetches
@@ -32,7 +34,7 @@ export default function RoundTripFlights({
       if (returnDate) payload.return_date = returnDate;
   
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/flights/search",
+        `${apiUrl}/api/flights/search`,
         payload,
         { headers: { Accept: "application/json", "Content-Type": "application/json" } }
       );

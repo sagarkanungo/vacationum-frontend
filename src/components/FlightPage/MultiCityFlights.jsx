@@ -10,6 +10,8 @@ export default function MultiCityFlights({ filters, searchTrigger }) {
   const [hasMore, setHasMore] = useState(true);
   const listRef = useRef(null);
 
+  const apiUrl = import.meta.env.VITE_BACKEND_URL;
+
   // Fetch multicity flights
   const fetchFlights = async (reset = false) => {
     if (loading) return; // prevent multiple fetches
@@ -26,7 +28,7 @@ export default function MultiCityFlights({ filters, searchTrigger }) {
       };
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/flights/search",
+        `${apiUrl}/api/flights/search`,
         payload,
         {
           headers: {

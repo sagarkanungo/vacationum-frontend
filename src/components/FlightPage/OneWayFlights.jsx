@@ -10,7 +10,7 @@ export default function OneWayFlights({ from, to, date, searchTrigger }) {
   const [page, setPage] = useState(1); // for pagination
   const listRef = useRef(null); // scroll container ref
 
-
+  const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
   const fetchFlights = async (reset = false) => {
     if (loading) return; // Prevent duplicate fetches
@@ -23,7 +23,7 @@ export default function OneWayFlights({ from, to, date, searchTrigger }) {
       if (date) payload.date = date;
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/flights/search",
+        `${apiUrl}/api/flights/search`, // use env variable
         payload,
         { headers: { Accept: "application/json" } }
       );
