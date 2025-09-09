@@ -9,10 +9,9 @@ export default function OneWayFlights({ from, to, date, searchTrigger }) {
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1); // for pagination
   const listRef = useRef(null); // scroll container ref
-  const apiUrl = "https://vacationum-backend-production.up.railway.app"
-  // const apiUrl = import.meta.env.VITE_BACKEND_URL;
-  console.log("Backend URL:", apiUrl);
-  // console.log(import.meta.env.VITE_BACKEND_URL)
+
+  const apiUrl = import.meta.env.VITE_BACKEND_URL;
+  
 
   const fetchFlights = async (reset = false) => {
     if (loading) return; // Prevent duplicate fetches
