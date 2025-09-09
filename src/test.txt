@@ -1,0 +1,142 @@
+{
+    "success": true,
+    "trip_type": "multicity",
+    "segments": [
+        {
+            "from": "DEL",
+            "to": "DXB",
+            "date": "2025-09-20",
+            "flights": [
+                {
+                    "id": 1,
+                    "flight_number": "AI102",
+                    "airline": "Air India",
+                    "airline_iata": "AI",
+                    "origin": {
+                        "iata": "DEL",
+                        "city": "New Delhi",
+                        "terminal": "T3"
+                    },
+                    "destination": {
+                        "iata": "DXB",
+                        "city": "Dubai",
+                        "terminal": "T2"
+                    },
+                    "departure_at": "2025-09-20 08:00:00",
+                    "arrival_at": "2025-09-20 10:30:00",
+                    "duration_minutes": 150,
+                    "stops": 0,
+                    "equipment": "A320",
+                    "price": "12000.00",
+                    "partially_refundable": false,
+                    "fares": [],
+                    "seats": [
+                        {
+                            "row": 1,
+                            "seat": "A",
+                            "status": "available",
+                            "price": 0
+                        },
+                        {
+                            "row": 1,
+                            "seat": "B",
+                            "status": "booked",
+                            "price": 0
+                        },
+                        {
+                            "row": 1,
+                            "seat": "C",
+                            "status": "available",
+                            "price": 18
+                        }
+                    ],
+                    "meals": [
+                        {
+                            "name": "Standard",
+                            "price": 0
+                        },
+                        {
+                            "name": "Vegetarian",
+                            "price": 20
+                        },
+                        {
+                            "name": "Non-Veg",
+                            "price": 25
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "from": "DXB",
+            "to": "DEL",
+            "date": "2025-09-25",
+            "flights": [
+                {
+                    "id": 2,
+                    "flight_number": "AI103",
+                    "airline": "Air India",
+                    "airline_iata": "AI",
+                    "origin": {
+                        "iata": "DXB",
+                        "city": "Dubai",
+                        "terminal": "T1"
+                    },
+                    "destination": {
+                        "iata": "DEL",
+                        "city": "New Delhi",
+                        "terminal": "T3"
+                    },
+                    "departure_at": "2025-09-25 19:00:00",
+                    "arrival_at": "2025-09-25 23:30:00",
+                    "duration_minutes": 210,
+                    "stops": 0,
+                    "equipment": "A320",
+                    "price": "12500.00",
+                    "partially_refundable": false,
+                    "fares": [],
+                    "seats": [
+                        {
+                            "row": 1,
+                            "seat": "A",
+                            "status": "available",
+                            "price": 0
+                        },
+                        {
+                            "row": 1,
+                            "seat": "B",
+                            "status": "booked",
+                            "price": 0
+                        },
+                        {
+                            "row": 1,
+                            "seat": "C",
+                            "status": "available",
+                            "price": 18
+                        }
+                    ],
+                    "meals": [
+                        {
+                            "name": "Standard",
+                            "price": 0
+                        },
+                        {
+                            "name": "Vegetarian",
+                            "price": 20
+                        },
+                        {
+                            "name": "Non-Veg",
+                            "price": 25
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "from": "DEL",
+            "to": "BAR",
+            "date": "2025-09-28",
+            "flights": []
+        }
+    ]
+}
