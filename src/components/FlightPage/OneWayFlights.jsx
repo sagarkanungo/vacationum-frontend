@@ -11,7 +11,7 @@ export default function OneWayFlights({ from, to, date, searchTrigger }) {
   const listRef = useRef(null); // scroll container ref
 
   const apiUrl = import.meta.env.VITE_BACKEND_URL;
-  
+  console.log('test url',apiUrl)
 
   const fetchFlights = async (reset = false) => {
     if (loading) return; // Prevent duplicate fetches
